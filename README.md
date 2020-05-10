@@ -1,2 +1,8 @@
 # homebrew-tap
-My little contribution to homebrew formulas
+
+Homebrew Formulae by jjuarez
+
+```bash
+brew tap jjuarez/tap
+```
+
