@@ -1,4 +1,4 @@
-class Kubei < Formula
+class Kubie < Formula
   desc     "Much more powerful alternative to kubectx and kubens"
   homepage "https://github.com/sbstp/kubie"
   url      "https://github.com/sbstp/kubie/releases/download/v0.9.1/kubie-darwin-amd64"
