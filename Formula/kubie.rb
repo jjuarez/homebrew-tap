@@ -1,9 +1,9 @@
 class Kubie < Formula
   desc     "Much more powerful alternative to kubectx and kubens"
   homepage "https://github.com/sbstp/kubie"
-  url      "https://github.com/sbstp/kubie/archive/v0.9.1.tar.gz"
-  version  "0.9.1"
-  sha256   "8f7926b1bcd0421247231353b6969c36498add3b88b55103349df3da763a5f42"
+  version  "0.16.0"
+  url      "https://github.com/sbstp/kubie/archive/refs/tags/#{version}.tar.gz"
+  sha256   "0c43848d201ee36c11ddb082a9d16604435c6190ac72f293e9f8f1ce62d20fa6"
 
   depends_on "rust" =>:build
 
@@ -12,6 +12,6 @@ class Kubie < Formula
   end
 
   test do
-    assert_match(/^kubie 0.9.1/, shell_ouput("#{bin}/kubie 2>&1", 0))
+    assert_match(/^kubie 0.16.0/, shell_ouput("#{bin}/kubie 2>&1", 0))
   end
 end
