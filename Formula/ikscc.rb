@@ -15,4 +15,5 @@ class Ikscc < Formula
 
   def install
     bin.install "iks-ctx-cleaner" => "ikscc"
+  end
 end
