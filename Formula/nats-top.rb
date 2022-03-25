@@ -6,12 +6,12 @@ class NatsTop < Formula
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/nats-io/nats-top/releases/download/v#{version}/nats-top_#{version}_Darwin_x86_64.tar.gz"
+    url "https://github.com/nats-io/nats-top/releases/download/v#{version}/nats-top_#{version}_darwin_amd64.tar.gz"
     sha256 "d4df1733ea89a935557ccc0c624714722ecd896a084ea3927948bbcb32bbd495"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/nats-io/nats-top/releases/download/v#{version}/nats-top_#{version}_Darwin_arm64.tar.gz"
+    url "https://github.com/nats-io/nats-top/releases/download/v#{version}/nats-top_#{version}_darwin_arm64.tar.gz"
     sha256 "e05f4b950a68153ac5b2f8ffcd58fb7418cf4b3ff1b8d83f421f2115f22088e0"
   end
 
