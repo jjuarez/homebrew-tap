@@ -1,4 +1,4 @@
-class NATSTop < Formula
+class NatsTop < Formula
   desc "nats-top is a top-like tool for monitoring NATS servers"
   homepage "https://nats.io"
   url "https://github.com/nats-io/nats-top"
