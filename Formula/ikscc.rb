@@ -1,26 +1,26 @@
 class Ikscc < Formula
-  desc     "This tools helps you to clean the IBM IKS/OpenShift cluster context names"
+  desc     "This tools helps you to clean the IBM Kubernetes Service/OpenShift cluster context names"
   homepage "https://github.com/jjuarez/iks-ctx-cleaner"
   version  "0.4.0"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/jjuarez/iks-ctx-cleaner/releases/download/v#{version}/iks-ctx-cleaner_#{version}_Darwin_x86_64.tar.gz"
-    sha256 "7e0b4aae4fbf6a16a34ee54a348e560fdf5c284244982e911e1dca726dbac49b"
+    url "https://github.com/jjuarez/iks-ctx-cleaner/releases/download/#{version}/iks-ctx-cleaner_#{version}_Darwin_x86_64.tar.gz"
+    sha256 "15170e928c651ccd92ff2c8dd6d6c2dd45723f1cf58ffad37ab272a50280e1f5"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/jjuarez/iks-ctx-cleaner/releases/download/v#{version}/iks-ctx-cleaner_#{version}_Darwin_arm64.tar.gz"
-    sha256 "e1a6b62804f2f11b1fb33b7af1add50491b21e13cc928496884983044d66b17d"
+    url "https://github.com/jjuarez/iks-ctx-cleaner/releases/download/#{version}/iks-ctx-cleaner_#{version}_Darwin_arm64.tar.gz"
+    sha256 "d832443c3b806c32e9782686420be92692890fa2e3caa0214992da5e853f3b0f"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/jjuarez/iks-ctx-cleaner/releases/download/v#{version}/iks-ctx-cleaner_#{version}_Linux_x86_64.tar.gz"
-    sha256 "6df5b60e46d812872c3823f40667c5df5ad11f22332d6cc1a0f7bdfe7a248322"
+    url "https://github.com/jjuarez/iks-ctx-cleaner/releases/download/#{version}/iks-ctx-cleaner_#{version}_Linux_x86_64.tar.gz"
+    sha256 "6d432681e2f1aca3aa28bad494c94eef9c2c4b19d09370d332ba0fcf00fe5d0f"
   end
 
   if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/jjuarez/iks-ctx-cleaner/releases/download/v#{version}/iks-ctx-cleaner_#{version}_Linux_arm64.tar.gz"
-    sha256 "6df5b60e46d812872c3823f40667c5df5ad11f22332d6cc1a0f7bdfe7a248322"
+    url "https://github.com/jjuarez/iks-ctx-cleaner/releases/download/#{version}/iks-ctx-cleaner_#{version}_Linux_arm64.tar.gz"
+    sha256 "b15e75228adc77c9ef209e02b33922d1d3cc7123dc99e66126a7a556bf619949"
   end
 
   def install
