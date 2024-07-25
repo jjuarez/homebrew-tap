@@ -1,7 +1,7 @@
 class Ikscc < Formula
   desc     "This tools helps you to clean the IBM IKS/OpenShift cluster context names"
   homepage "https://github.com/jjuarez/iks-ctx-cleaner"
-  version  "0.3.0"
+  version  "0.3.3"
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/jjuarez/iks-ctx-cleaner/releases/download/v#{version}/iks-ctx-cleaner_#{version}_Darwin_x86_64.tar.gz"
@@ -28,6 +28,6 @@ class Ikscc < Formula
   end
 
   test do
-    assert_match(/^ikscc 0.3.0/, shell_output("#{bin}/ikscc 2>&1", 0)) 
+    assert_match(/^ikscc 0.3.3/, shell_output("#{bin}/ikscc 2>&1", 0)) 
   end
 end
